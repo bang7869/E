@@ -1,5 +1,5 @@
 body{
-    background-image: url("./img/batang.png");
+    background-image: url("../img/batang.png");
 }
 
 
@@ -26,9 +26,9 @@ li a:hover{
 a.gongji{
   background-color: #2e1705; 
   color: #f5f1e7; 
-  text-decoration: none;
   font-size: 1.3em; 
   font-family: "휴먼명조", sans-serif;
+  text-decoration: none;
 }
 a.gongji:hover{
     background-color: #2e1705; 

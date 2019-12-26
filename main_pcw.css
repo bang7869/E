@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #f5f1e7;
+    display: flex;
+    border-bottom: 3px solid black;
+    justify-content: center;
+    height: 78px;
+    position: fixed;
+    width: 100%;
+}
+
+#logo{
+    margin: 11px 0px 0px 20px;
+}
+
+ul#menu_category{
+    display: flex;
+    padding-top: 40px;
+    list-style: none;
+}
+
+#menu_category li a span{
+    font-size: 14px;
+    color: #69461c;
+}
+
+ul#menu_category li a{
+    color: #69461c;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 83px;
+}
+
+#menu_category li:hover a, #menu_category li:hover span{
+    color: #a97b48;
+}
+
+div#main_img_first{
+    background:url('http://www.naturekitchen.co.kr/images/main/main_visual01.jpg') center;
+    width: 100%;
+    height: 712px;
+    padding-top: 162px;
+    margin-bottom: -197px;
+}
+
+div#main_first_price{
+    width: 100%;
+    background: rgba(29, 23, 11, .8);
+    height: 116px;
+    margin-top: -116px;
+}
+
+div#main_first_price p#price{
+    text-align: center;
+    height: 116px;
+}
+
+div#main_img_second{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main02.jpg') center;
+    width: 100%;
+}
+
+div#main_second_content{
+    border: 1px solid red;
+    width: 1021px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+div#main_second_content ul{
+    display: flex;
+    padding: 40px 3px 0px 0px;
+    margin-left: 18px;
+    list-style: none;
+}
+
+#main_second_content ul li{
+    margin-right: 9px;
+}
+
+#notic01_head{
+    border: 1px solid black;
+}
+
+
+#main_img_third{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main01.jpg') center;
+    width: 100%;
+}
+
+#main_third_content{
+    width: 1021px;
+    margin: 0 auto;
+}
+
+#main_img_last{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main01.jpg') center;
+    width: 100%;
+}
+
+#main_last_content{
+    width: 1021px;
+    margin: 0 auto;
+}

@@ -12,6 +12,8 @@ header.main_header{
 li a{
     color: rgb(49, 4, 4);
     font-size: 1.3em;
+    font-family: "굴림", sans-serif;
+    font-weight: bold;
     
 }
 li a:hover{
@@ -21,31 +23,31 @@ li a:hover{
     background-color: #939598;
     height: 188px;
 }
-a.aa1{
-  background-color: #a97b48; 
-  color: white; 
-  font-size: 1.5em; 
-  text-decoration: none;
+a.gongji{
+  background-color: #2e1705; 
+  color: #f5f1e7; 
+  font-size: 1.3em; 
+  font-family: "휴먼명조", sans-serif;
 }
-a.aa1:hover{
+a.gongji:hover{
     background-color: #2e1705; 
       
   }
-a.aa2{
+a.event{
     background-color: #a97b48; 
-    color: white; 
-    font-size: 1.5em ;
-    font-style: "궁서체";
-    text-decoration: none
+    color: #f5f1e7; 
+    font-size: 1.3em ;
+    text-decoration: none;
+    font-family: "휴먼명조", sans-serif;
   }
-  a.aa2:hover{
+  a.event:hover{
     background-color: #2e1705; 
       
   }
   a.aa3{
       color: black;
       text-decoration: none;
-      font-style: bold;
+
   }
   th{
       border-bottom-color: #c2a683;
@@ -84,3 +86,38 @@ a.aa2{
       text-decoration: none;
       font-weight: bold;
   }
+  .myinput{
+    width: 300px;
+    height: 25px;
+    display: flex;
+    float: right;
+  }
+  #sel{
+    width: 80px;
+    display: flex;
+    float: right;
+    margin-right: 3px;
+    
+  }
+  #btn_search{
+    display: flex;
+    float: right;
+    background-color: #ab875d;
+    width: 50px;
+    height: 25px;
+    border-color: #ab875d;
+    box-shadow: none;
+    margin-right: 46px;
+    
+  }
+  #btn_search_img{
+    margin-left: 8px;
+  }
+  #ifram_header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  

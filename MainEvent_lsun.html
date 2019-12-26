@@ -9,41 +9,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="./js.js"></script>
     <link rel="stylesheet" href="./style.css">
    
 </head>
-<body>
-    
+<body> 
     <header class="text-center main_header">
+      <!-- <img src="./img/voice.png" alt="" style="position: relative; right: 10px; z-index: 1;" > -->
         <div class="container">
                 <ul class="nav">
-                    <li class="col-md-4 text-center mt-2">
+                    <li class="col-md-1 text-center mt-2">
                         <img src="./img/logo.gif" alt="자연별곡" style="background-repeat: no-repeat;"> 
                     </li>
-                    <li class="nav-item col-md-2 mt-4">
-                      <a class="nav-link active" href="#">브랜드 소개</a>
+                    <li class="nav-item col-md-4 mt-4">
+                      <a class="nav-link" href="#">브랜드 소개 <span style="font-size: 0.65em;" id="mainHeader_a">Introduce Brand</span></a>
                     </li>
                     <li class="nav-item col-md-2 mt-4">
-                      <a class="nav-link" href="#">메뉴</a>
+                      <a class="nav-link" href="#">메뉴 <span style="font-size: 0.65em;" id="mainHeader_a">Menu</span></a>
                     </li>
                     <li class="nav-item col-md-2 mt-4">
-                      <a class="nav-link" href="#">이벤트</a>
+                      <a class="nav-link" href="#">이벤트 <span style="font-size: 0.65em;" id="mainHeader_a">Event</span></a>
                     </li>
-                    <li class="nav-item col-md-2 mt-4">
-                        <a class="nav-link" href="#">매장 안내</a>
+                    <li class="nav-item col-md-3 mt-4">
+                        <a class="nav-link" href="#">매장 안내 <span style="font-size: 0.65em;" id="mainHeader_a">Store Guide</span></a>
                     </li>
                   </ul>
                 </div>
     </header>
     <div class="container">
-    <nav class="row text-center">
-        <a href="./gongji.html" target="iframe1" class="aa1 col-lg-6">공지사항</a>
-        <a href="./event.html" target="iframe1" class="aa2 col-lg-6">지점 행사</a>
+    <nav class="row text-center" style="margin:auto; max-width:1021px; padding-left: 0; padding-right: 0;">
+        <a href="./gongji.html" target="iframe1" class="gongji col-md-6" id="gongji">공지사항</a>
+        <a href="./event.html" target="iframe1" class="event col-md-6" id="event">지점 행사</a>
     </nav>
 </div>
-<hr class="mt-0" style="background-color: black; height: 2px;">
+<hr class="mt-0" style="background-color: black; height: 1px;">
     <div class="container">
-    <section><iframe name="iframe1" src="gongji.html" frameborder="0" width="100%" height="750px" class="mb-0"></iframe></section>
+    <section><iframe name="iframe1" src="gongji.html" frameborder="0" style="height: 100vh; width: 100%; "></iframe></section>
     </div>
     <footer class="footersty">
       <div class="container">
@@ -54,11 +56,9 @@
             E POINT 멤버쉽 관련 문의 : 1833-6439 | 매장 이용관련 문의 및 불편사항 : 1577-1259 <br>
             이메일 : elandfood@eland.co.kr <strong>|</strong><a href="#" class="aa4"> 개인정보처리방침</a> <strong>|</strong><a href="#" class="aa4"> 영상정보처리기기운영·관리방침</a> <br>
             Copyright©2014 자연별곡<br>
-
           </p>
         </section>
         <aside id="footeraside">
-          
           <img src="./img/isms.png" alt="인증마크">
           <a href="https://www.facebook.com"><img src="./img/sns01.png" alt="페이스북 마크"></a>
           <a href="https://band.us/home"><img src="./img/sns02.png" alt="밴드 마크"></a>

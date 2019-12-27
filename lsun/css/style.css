@@ -164,17 +164,12 @@ ul#menu_category li a{
 @media all and (max-width: 575px){
   #mainHeader, nav{
       flex-direction: column;
-      /* height: 0; */
-      
-      /* background-color: red; */
+      justify-content: start;
+      padding-top: 10px;
   }
   
-  /* #div_banner{
-    padding-top: 50px;
-    margin-top: 50px;
-  } */
   #banner{
-    padding-top: 14px;
+    padding-top: 0px;
   }
 
   .footersty > div{
@@ -204,8 +199,9 @@ ul#menu_category li a{
     margin: 0;
     margin-top: 0;
   }
-  #body_gongji{
-    max-width: 600px;
+
+  .navbar{
+    padding: 0;
   }
  
 }

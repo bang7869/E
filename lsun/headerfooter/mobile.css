@@ -1,0 +1,46 @@
+
+@media all and (max-width: 575px){
+    #mainHeader, nav{
+        flex-direction: column;
+        /* height: 0; */
+        
+        /* background-color: red; */
+    }
+    
+    /* #div_banner{
+      padding-top: 50px;
+      margin-top: 50px;
+    } */
+    #banner{
+      padding-top: 14px;
+    }
+  
+    .footersty > div{
+      max-width: 600px;
+      padding-left: 20px;
+  
+    }
+    #footeraside{
+     font-size: 0;
+     margin: 0 auto;
+     float: left;
+     padding-top: 5px;
+    }
+   
+    #footersection{
+      margin: 0 auto;
+      padding-top: 5px;
+    }
+    .a_span{display: block; text-align: center;}
+  
+    
+    #navbar_brand{font-size: 1.5rem; color: #ab875d;}
+    header > nav > div{background-color: black; width: 600px; position: absolute;}
+    header > nav > div > div > ul{ float: right;}
+    header > nav > div > div > ul > li {padding: 0 33px;}
+    ul#menu_category li a{
+      margin: 0;
+      margin-top: 0;
+    }
+   
+  }

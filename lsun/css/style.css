@@ -167,9 +167,6 @@ ul#menu_category li a{
 #menu_category li:hover a, #menu_category li:hover span{
   color: #a97b48;
 }
-#bodysection{
-
-}
 #navbar_brand{font-size: 0em;}
 
 .img1{
@@ -198,7 +195,7 @@ ul#menu_category li a{
     margin-top: 50px;
   } */
   #banner{
-    padding-top: 12px;
+    padding-top: 14px;
   }
 
   .footersty > div{

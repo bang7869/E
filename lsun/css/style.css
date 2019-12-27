@@ -163,7 +163,6 @@ ul#menu_category li a{
   margin-left: 70px;
   margin-bottom: 20;
 }
-
 #menu_category li:hover a, #menu_category li:hover span{
   color: #a97b48;
 }
@@ -172,11 +171,6 @@ ul#menu_category li a{
 .img1{
   display: inline;
 }
-
-@media all and (mim-width: 600px){
-
-}
-
 
 
 

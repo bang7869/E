@@ -156,6 +156,13 @@ ul#menu_category li a{
   color: #a97b48;
 }
 #navbar_brand{font-size: 0em;}
+.pageBtn{
+  color: black;
+  margin-top: 5px;
+  padding:0 5px;
+background-image: url("../img/batang.png");
+border: 0;
+}
 
 
 

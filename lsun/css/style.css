@@ -10,17 +10,6 @@ header.main_header{
   background-color: #f5f1e7;
 }
 
-/* li a{
-  color: rgb(49, 4, 4);
-  font-size: 1.3em;
-  font-family: "굴림", sans-serif;
-  font-weight: bold;
-  
-}
-li a:hover{
-  color: burlywood;
-} */
-
 a.gongji{
 background-color: #2e1705; 
 color: #f5f1e7; 
@@ -167,10 +156,6 @@ ul#menu_category li a{
   color: #a97b48;
 }
 #navbar_brand{font-size: 0em;}
-
-.img1{
-  display: inline;
-}
 
 
 

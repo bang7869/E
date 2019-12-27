@@ -6,26 +6,37 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>자연별곡</title>
 
-        <link rel="stylesheet" href="../Park/CSS/main_pcw.css">
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="./CSS/main_pcw.css">
+
+        <script src="./JS/main_pcw.js"></script>
     </head>
 
     <body>
-        <header>
-            <div id="logo">
-                <a href=""><img src="http://www.naturekitchen.co.kr/images/common/logo.gif" alt="이미지" width="141" height="53"></a>
-            </div>
-
-            <div id="menu">
-                <ul id="menu_category">
-                    <li><a href="">브랜드 소개<span>Introduce Brand</span></a></li>
-                    <li><a href="">메뉴<span>Menu</span></a></li>
-                    <li><a href="">이벤트<span>Event</span></a></li>
-                    <li><a href="">매장 안내<span>Store Guide</span></a></li>
-                </ul>
-            </div>
+        <header style="z-index: 1;" id="mainHeader">
+            <nav class="navbar navbar-expand-sm navbar-dark" id="mainHeaderNav">
+              <div class="container" >
+                  <!-- 2.1 Logo 글씨 or 이미지 -->
+                  <a href="#"><img src="http://www.naturekitchen.co.kr/images/common/logo.gif" alt="이미지" width="141" height="53"></a>
+                  <a id="navbar_brand" href="#" class="navbar-brand">이벤트 Event</a>
+                  <!-- 2.2 모바일 화면일 때 오른쪽 끝에 햄버그아이콘 모양의 메뉴를 네비게이션이 변경 -->
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu"><span class="navbar-toggler-icon" ></span></button>
+                  <!-- 2.3 네비메뉴 -->
+                  <div class="collapse navbar-collapse" id="navMenu">
+                      <ul id="menu_category">
+                          <li><a id="header_a" href="#" class="text-center">브랜드 소개<span class="a_span">Introduce Brand</span></a></li>
+                          <li><a id="header_a" href="../gyu/menu_bg.html">메뉴<span class="a_span">Menu</span></a></li>
+                          <li><a id="header_a" href="../lsun/html/MainEvent_lsun.html">이벤트<span class="a_span">Event</span></a></li>
+                          <li><a id="header_a" href="../Hwan/html/Hwan.html">매장 안내<span class="a_span">Store Guide</span></a></li>
+                       </ul>
+                  </div>
+              </div>
+          </nav>
         </header>
-
         <div id="main_img_first"></div>
     
         <div id="main_first_price">
@@ -36,47 +47,143 @@
 
         <div id="main_img_second">
             <div id="main_second_content">
-                <p>
-                    <img src="http://www.naturekitchen.co.kr/images/main/tit_introducemenu.jpg" alt="">
-                </p>
+                <img src="./Image/tit_introducemenu.jpg" alt="">
 
-                <ul>
+                <ul id="menu_list">
                     <li>
                         <a href="">
-                            <img src="http://www.naturekitchen.co.kr/images/main/btn_season_menu.jpg" alt="">
+                            <img src="./Image/btn_season_menu.jpg" alt="">
                         </a>
                     </li>
 
                     <li>
                         <a href="">
-                            <img src="http://www.naturekitchen.co.kr/images/main/btn_lunch_menu.jpg" alt="">
+                            <img src="./Image/btn_lunch_menu.jpg" alt="">
                         </a>
                     </li>
 
                     <li>
                         <a href="">
-                            <img src="http://www.naturekitchen.co.kr/images/main/btn_dinner_weekend_menu.jpg" alt="">
+                            <img src="./Image/btn_dinner_weekend_menu.jpg" alt="">
                         </a>
                     </li>
 
                     <li>
                         <a href="">
-                            <img src="http://www.naturekitchen.co.kr/images/main/btn_add_menu.jpg" alt="">
+                            <img src="./Image/btn_add_menu.jpg" alt="">
                         </a>
                     </li>
                 </ul>
 
-                <div id="main_second_notic">
-                    <table style="border: 1px solid black;">
-                        <tr>
-                            <th id="notic01_head">
-                                <img src="http://www.naturekitchen.co.kr/images/main/txt_festival.gif" alt="">
-                            </th>
-                        </tr>
+                <div id="tables">
+                    
+                    <div id="storeEvent">
+                        <caption><img src="./Image/txt_festival.gif" alt=""></caption>
+                        <table class="table table-hover table-sm">
+                            <tr>
+                                <th id="title_back">번호</th>
+                                <th id="title_back">제목</th>
+                                <th id="title_back">등록일자</th>
+                            </tr>
+                            <tr>
+                                <td id="text_back">1</td>
+                                <td id="text_back">Hello</td>
+                                <td id="text_back">2019.12.20</td>
+                            </tr>
 
-                        <tr>
-                            <td>adsf</td>
-                        </tr>
+                            <tr>
+                                <td id="text_back">2</td>
+                                <td id="text_back">Hello</td>
+                                <td id="text_back">2019.12.21</td>
+                            </tr>
+                        </table>
+
+                        <ul class="pagination justify-content-center pagination-sm">
+                            <li class="page-item"><a href="" class="page-link">1</a></li>
+                            <li class="page-item"><a href="" class="page-link">2</a></li>
+                            <li class="page-item"><a href="" class="page-link">3</a></li>
+                            <li class="page-item"><a href="" class="page-link">4</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="notic">
+                        <caption><img src="./Image/txt_sns.gif" alt=""></caption>
+                        <table class="table table-hover table-sm">
+                            <tr>
+                                <th id="title_back">번호</th>
+                                <th id="title_back">제목</th>
+                                <th id="title_back">등록일자</th>
+                            </tr>
+                            <tr>
+                                <td id="text_back">1</td>
+                                <td id="text_back">Hello</td>
+                                <td id="text_back">2019.12.23</td>
+                            </tr>
+                            <tr>
+                                <td id="text_back">2</td>
+                                <td id="text_back">Nice to meet you.</td>
+                                <td id="text_back">2019.12.24</td>
+                            </tr>
+                        </table>
+
+                        <ul class="pagination justify-content-center pagination-sm">
+                            <li class="page-item"><a href="" class="page-link">1</a></li>
+                            <li class="page-item"><a href="" class="page-link">2</a></li>
+                            <li class="page-item"><a href="" class="page-link">3</a></li>
+                            <li class="page-item"><a href="" class="page-link">4</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="salad">
+                    <table id="adt">
+                        <colgroup>
+                            <col width='50%'>
+                            <col width='50%'>
+                        </colgroup>
+
+                        <tbody>
+                            <tr>
+                                <th colspan="2">
+                                    <img src="./Image/tit_adt.jpg" alt="">
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td id="color01">평일 점심 13,900원</td>
+                                <td id="color02">저녁, 주말, 공휴일 19,900원</td>
+                            </tr>
+
+                            <tr>
+                                <td id="color02">일부 특별매장 평일점심 14,900원</td>
+                                <td id="color01">뉴코아일산점, 광화문점, 경성대점</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table id="chd">
+                        <colgroup>
+                            <col width='50%'>
+                            <col width='50%'>
+                        </colgroup>
+
+                        <tbody>
+                            <tr>
+                                <th colspan="2">
+                                    <img src="./Image/tit_adt.jpg" alt="">
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td id="color01">취학 아동 9,900원</td>
+                                <td id="color02">미취학 아동 6,500원</td>
+                            </tr>
+
+                            <tr>
+                                <td id="color02">일부 특별매장 미취학 아동 7,900원</td>
+                                <td id="color01">오리점, 홈플러스 잠실점, 목동점, 동아쇼핑 대구점, 서울대입구점, 뉴코아 인천논현점, 홈플러스 춘천점, 의정부역점, 구리점, 홈플러스 인천청라점, 뉴코아 안산점, 뉴코아 일산점, 일산 대화점, 산본점</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -84,19 +191,38 @@
 
         <div id="main_img_third">
             <div id="main_third_content">
-                <p>
-                    <img src="http://www.naturekitchen.co.kr/images/main/img_brand_introduce.png" alt="">
-                </p>
+                    <img src="./Image/img_brand_introduce.png" alt="">
             </div>
-            
         </div>
-    </body>
+        
+        <div id="main_img_last">
+            <div id="main_last_content">
+                <img src="./Image/img_chef_box.jpg" alt="">
+            </div>
+        </div>
 
-    <div id="main_img_last">
-        <div id="main_last_content">
-            <p>
-                <img src="http://www.naturekitchen.co.kr/images/main/img_chef_box.jpg" alt="">
-            </p>
-        </div>
-    </div>
+
+
+
+        <footer class="footersty">
+            <div style="width: 1021px;">
+                <section>
+                    <p id="footersection">
+                        (주) 이랜드이츠 | 서울특별시 금천구 가산디지털로1로 149<br>
+                        대표이사 : 김완식 | 개인정보보호 책임자 : 김완식 <br>
+                        E POINT 멤버쉽 관련 문의 : 1833-6439 | 매장 이용관련 문의 및 불편사항 : 1577-1259 <br>
+                        이메일 : elandfood@eland.co.kr <strong>|</strong><a href="#" class="aa4"> 개인정보처리방침</a> <strong>|</strong><a href="#" class="aa4"> 영상정보처리기기운영·관리방침</a> <br>
+                        Copyright©2014 자연별곡<br>
+                    </p>
+                </section>
+                <aside id="footeraside">
+                    <img src="./Image/isms.png" alt="인증마크">
+                    <a href="https://www.facebook.com" style="margin-left: 15px;"><img src="../Park/Image/sns01.png" alt="페이스북 마크"></a>
+                    <a href="https://band.us/home" style="margin-left: 5px;"><img src="./Image/sns02.png" alt="밴드 마크"></a>
+                    <a href="https://www.kakaocorp.com/" style="margin-left: 5px;"><img src="./Image/sns03.png" alt="카카오 마크"></a>
+                    <a href="https://www.instagram.com/" style="margin-left: 5px;"><img src="./Image/sns04.png" alt="인스타그램 마크"></a> 
+                </aside>
+            </div>
+        </footer>
+    </body>
 </html>

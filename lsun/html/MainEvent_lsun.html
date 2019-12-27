@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=gi, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -15,40 +15,42 @@
    
 </head>
 <body> 
-    <header class="text-center main_header">
-      <!-- <img src="./img/voice.png" alt="" style="position: relative; right: 10px; z-index: 1;" > -->
-        <div class="container">
-                <ul class="nav">
-                    <li class="col-md-1 text-center mt-2">
-                        <img src="../img/logo.gif" alt="자연별곡" style="background-repeat: no-repeat;"> 
-                    </li>
-                    <li class="nav-item col-md-4 mt-4">
-                      <a class="nav-link" href="#">브랜드 소개 <span style="font-size: 0.65em;" id="mainHeader_a">Introduce Brand</span></a>
-                    </li>
-                    <li class="nav-item col-md-2 mt-4">
-                      <a class="nav-link" href="#">메뉴 <span style="font-size: 0.65em;" id="mainHeader_a">Menu</span></a>
-                    </li>
-                    <li class="nav-item col-md-2 mt-4">
-                      <a class="nav-link" href="#">이벤트 <span style="font-size: 0.65em;" id="mainHeader_a">Event</span></a>
-                    </li>
-                    <li class="nav-item col-md-3 mt-4">
-                        <a class="nav-link" href="#">매장 안내 <span style="font-size: 0.65em;" id="mainHeader_a">Store Guide</span></a>
-                    </li>
-                  </ul>
-                </div>
-    </header>
-    <div class="container">
-    <nav class="row text-center" style="margin:auto; max-width:1021px; padding-left: 0; padding-right: 0;">
-        <a href="../html/gongji.html" target="iframe1" class="gongji col-md-6" id="gongji">공지사항</a>
+  <header style="z-index: 1;" id="mainHeader">
+    <nav class="navbar navbar-expand-sm navbar-dark" id="mainHeaderNav">
+      <div class="container" >
+          <!-- 2.1 Logo 글씨 or 이미지 -->
+          <a href="#"><img src="http://www.naturekitchen.co.kr/images/common/logo.gif" alt="이미지" width="141" height="53"></a>
+          <a id="navbar_brand" href="#" class="navbar-brand">이벤트 Event</a>
+          <!-- 2.2 모바일 화면일 때 오른쪽 끝에 햄버그아이콘 모양의 메뉴를 네비게이션이 변경 -->
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu"><span class="navbar-toggler-icon" ></span></button>
+          <!-- 2.3 네비메뉴 -->
+          <div class="collapse navbar-collapse" id="navMenu">
+              <ul id="menu_category">
+                  <li><a id="header_a" href="#" class="text-center">브랜드 소개<span class="a_span">Introduce Brand</span></a></li>
+                  <li><a id="header_a" href="../gyu/menu_bg.html">메뉴<span class="a_span">Menu</span></a></li>
+                  <li><a id="header_a" href="../lsun/html/MainEvent_lsun.html">이벤트<span class="a_span">Event</span></a></li>
+                  <li><a id="header_a" href="../Hwan/html/Hwan.html">매장 안내<span class="a_span">Store Guide</span></a></li>
+               </ul>
+          </div>
+      </div>
+  </nav>
+
+
+
+
+</header>
+    <div style="padding-top: 76px;" id="div_banner">
+    <nav id="banner"  class="row text-center" style="margin:auto; max-width:1021px; padding-left: 0; padding-right: 0;">
+        <a href="../html/gongji.html" target="iframe1" class="gongji col-md-6" id="gongji" >공지사항</a>
         <a href="../html/event.html" target="iframe1" class="event col-md-6" id="event">지점 행사</a>
-    </nav>
-</div>
+    </navid="banner" >
+    </div>
 <hr class="mt-0" style="background-color: black; height: 1px;">
     <div class="container">
-    <section><iframe name="iframe1" src="../html/gongji.html" frameborder="0" style="height: 100vh; width: 100%; "></iframe></section>
+    <section class="bodysection"><iframe id="bodyiframe" name="iframe1" src="../html/gongji.html" frameborder="0" style="height: 100vh; width: 100%; "></iframe></section>
     </div>
     <footer class="footersty">
-      <div class="container">
+      <div style="width: 1021px;">
         <section>
           <p id="footersection">
             (주) 이랜드이츠 | 서울특별시 금천구 가산디지털로1로 149<br>
@@ -60,22 +62,16 @@
         </section>
         <aside id="footeraside">
           <img src="../img/isms.png" alt="인증마크">
-          <a href="https://www.facebook.com"><img src="../img/sns01.png" alt="페이스북 마크"></a>
-          <a href="https://band.us/home"><img src="../img/sns02.png" alt="밴드 마크"></a>
-          <a href="https://www.kakaocorp.com/"><img src="../img/sns03.png" alt="카카오 마크"></a>
-          <a href="https://www.instagram.com/"><img src="../img/sns04.png" alt="인스타그램 마크"></a>
+          <a href="https://www.facebook.com" style="margin-left: 15px;"><img src="../img/sns01.png" alt="페이스북 마크"></a>
+          <a href="https://band.us/home" style="margin-left: 5px;"><img src="../img/sns02.png" alt="밴드 마크"></a>
+          <a href="https://www.kakaocorp.com/" style="margin-left: 5px;"><img src="../img/sns03.png" alt="카카오 마크"></a>
+          <a href="https://www.instagram.com/" style="margin-left: 5px;"><img src="../img/sns04.png" alt="인스타그램 마크"></a>
           
         </aside>
         
       </div>
       
     </footer>
-        
-        
-
-
-    
-    
     
 </body>
 </html>

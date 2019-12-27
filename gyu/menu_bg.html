@@ -10,32 +10,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/menu_bg.css ">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/menu.js"></script>
 
 </head>
 
 <body>
     <div id="wrap">
 
-        <header>
-            
+        <header style="z-index: 1;" id="mainHeader">
+            <nav class="navbar navbar-expand-sm navbar-dark" id="mainHeaderNav">
+              <div class="container" >
+                  <!-- 2.1 Logo 글씨 or 이미지 -->
+                  <a href="#"><img src="http://www.naturekitchen.co.kr/images/common/logo.gif" alt="이미지" width="141" height="53"></a>
+                  <a id="navbar_brand" href="#" class="navbar-brand">이벤트 Event</a>
+                  <!-- 2.2 모바일 화면일 때 오른쪽 끝에 햄버그아이콘 모양의 메뉴를 네비게이션이 변경 -->
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu"><span class="navbar-toggler-icon" ></span></button>
+                  <!-- 2.3 네비메뉴 -->
+                  <div class="collapse navbar-collapse" id="navMenu">
+                      <ul id="menu_category">
+                          <li><a id="header_a" href="#" class="text-center">브랜드 소개<span class="a_span">Introduce Brand</span></a></li>
+                          <li><a id="header_a" href="../gyu/menu_bg.html">메뉴<span class="a_span">Menu</span></a></li>
+                          <li><a id="header_a" href="../lsun/html/MainEvent_lsun.html">이벤트<span class="a_span">Event</span></a></li>
+                          <li><a id="header_a" href="../Hwan/html/Hwan.html">매장 안내<span class="a_span">Store Guide</span></a></li>
+                       </ul>
+                  </div>
+              </div>
+          </nav>
         </header>
 
-        <nav>
+        <nav id="nav">
             <section class="section_01">
                 <h1>네비게이션</h1>
                 <article class="article_01">
                     <ul class="maxw600">
-                        <li class="maxw600">계절 메뉴</li>
-                        <li class="maxw600">점심 메뉴</li>
-                        <li class="maxw600">저녁,주말 메뉴</li>
-                        <li class="maxw600">추가 메뉴</li>
+                        <li class="menu_nav menu_nav_select maxw600">계절 메뉴</li>
+                        <li class="menu_nav maxw600">점심 메뉴</li>
+                        <li class="menu_nav maxw600">저녁,주말 메뉴</li>
+                        <li class="menu_nav maxw600">추가 메뉴</li>
                     </ul>
                 </article>
             </section>
         </nav>
 
         <div id="content">
-            <section class="section_01">
+            <section class="section_01 menu_content menu_content_show">
                 <h1>계절메뉴</h1>
                 <article class="article_01">
                     <div class="titleBox_01">
@@ -110,18 +131,19 @@
 
 
 
-            <section>
+            <section class="menu_content">
                 <h1>점심 메뉴</h1>
                 <article>
                 </article>
             </section>
-            <section>
+
+            <section class="menu_content">
                 <h1>저녁,주말 메뉴</h1>
                 <article>
                 </article>
             </section>
 
-            <section>
+            <section class="menu_content">
                 <h1>추가 메뉴</h1>
                 <article>
                 </article>
@@ -139,13 +161,144 @@
             <section class="section_05">
                 <h1>게시판</h1>
                 <article class="article_01">
-                    
+                    <div>
+                        <div class="titleBox_01">
+                            <div class="el_01"></div>
+                            <span class="title_01 maxw600 rv">후기</span>
+                            <div class="el_01"></div>
+                        </div>
+                        <div>
+                            <table class="table_01 table table-hover table-borderless table-sm mt-2">
+                                <tr class="table_top">
+                                    <th class="rv_th">글 번호</th>
+                                    <th class="rv_th">내용</th >
+                                    <th class="rv_th">작성일</th>
+                                </tr>
+                                <tr>
+                                    <td class="rv_td">1</td>
+                                    <td class="rv_td rv_td_left rv_open">
+                                        <span class="rv_text">갈매기살구이 마시쪙</span>
+                                        <div class="rv_content">
+                                            <p>일이삼사오육칠팔구십</p>
+                                        </div>
+                                    </td>
+                                    <td class="rv_td">19-12-27</td>
+                                </tr>
+                                <tr>
+                                    <td class="rv_td">2</td>
+                                    <td class="rv_td rv_td_left rv_open">
+                                        <span class="rv_text">존맛탱</span>
+                                        <div class="rv_content">
+                                            <p>일이삼사오육칠팔구십</p>
+                                        </div>
+                                    </td>
+                                    <td class="rv_td">19-12-25</td>
+                                </tr>
+                                <tr>
+                                    <td class="rv_td">3</td>
+                                    <td class="rv_td rv_td_left rv_open">
+                                        <span class="rv_text">비밀 글입니다.</span>
+                                        <div class="rv_content">
+                                            <p>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="rv_td">20-01-01</td>
+                                </tr>
+                                <tr>
+                                    <td class="rv_td">4</td>
+                                    <td class="rv_td rv_td_left rv_open">
+                                        <span class="rv_text">비밀 글입니다.</span>
+                                        <div class="rv_content">
+                                            <p>비밀</p>
+                                        </div>
+                                    </td>
+                                    <td class="rv_td">00-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="rv_td">5</td>
+                                    <td class="rv_td rv_td_left rv_open">
+                                        <span class="rv_text">일이삼사오육칠팔구십</span>
+                                        <div class="rv_content">
+                                            <p>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                                일이삼사오육칠팔구십<br>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="rv_td">00-00-00</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div>
+                            <div class="btnBox_01">
+                                <a href="#" class="btn_01 btn btn-default btn-sm">글쓰기</a>
+                            </div>
+                            <div>
+                                <ul class="pagination justify-content-center pagination-sm">
+                                    <li class="page-item disabled">
+                                        <a class="rv_btn page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                      </li>
+                                    <li class="page-item"><a href="" class="rv_btn page-link">1</a></li>
+                                    <li class="page-item"><a href="" class="rv_btn page-link">2</a></li>
+                                    <li class="page-item"><a href="" class="rv_btn page-link">3</a></li>
+                                    <li class="page-item"><a href="" class="rv_btn page-link">4</a></li>
+                                    <li class="page-item">
+                                        <a class="rv_btn page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </article>
             </section>
 
         </div>
-        <footer></footer>
+        <footer class="footersty">
+            <div style="width: 1021px;">
+              <section>
+                <p id="footersection">
+                  (주) 이랜드이츠 | 서울특별시 금천구 가산디지털로1로 149<br>
+                  대표이사 : 김완식 | 개인정보보호 책임자 : 김완식 <br>
+                  E POINT 멤버쉽 관련 문의 : 1833-6439 | 매장 이용관련 문의 및 불편사항 : 1577-1259 <br>
+                  이메일 : elandfood@eland.co.kr <strong>|</strong><a href="#" class="aa4"> 개인정보처리방침</a> <strong>|</strong><a href="#" class="aa4"> 영상정보처리기기운영·관리방침</a> <br>
+                  Copyright©2014 자연별곡<br>
+                </p>
+              </section>
+              <aside id="footeraside">
+                <img src="./img/isms.png" alt="인증마크">
+                <a href="https://www.facebook.com" style="margin-left: 15px;"><img src="./img/sns01.png" alt="페이스북 마크"></a>
+                <a href="https://band.us/home" style="margin-left: 5px;"><img src="./img/sns02.png" alt="밴드 마크"></a>
+                <a href="https://www.kakaocorp.com/" style="margin-left: 5px;"><img src="./img/sns03.png" alt="카카오 마크"></a>
+                <a href="https://www.instagram.com/" style="margin-left: 5px;"><img src="./img/sns04.png" alt="인스타그램 마크"></a> 
+              </aside>
+            </div>
+          </footer>
     </div>
+
+    <script>
+        
+    </script>
 
 
 

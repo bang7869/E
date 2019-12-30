@@ -6,14 +6,6 @@ $(document).ready(function(){
     });
     
 });
-$(document).ready(function(){
-    $("#gongji").hover(function(){
-      $(this).css("background-color", "#2e1705");
-      }, function(){
-      $(this).css("background-color", "#2e1705");
-    });
-  });
-
   $(document).click(function(){
     //input 요소의 포커스 이벤트 처리
     $('#gongji').focus(function(){
@@ -49,11 +41,3 @@ $(document).ready(function(){
         $('#gongji').css('background-color','#a97b48');
     });
 });
-$(document).ready(function(){
-    $("#event").hover(function(){
-      $(this).css("background-color", "#2e1705");
-      
-      }, function(){
-      $(this).css("background-color", "#2e1705");
-    });
-  });

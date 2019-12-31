@@ -1,0 +1,19 @@
+body{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main02.jpg') center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#list01, #list02{
+    display: block;
+    padding-bottom: 5px;
+}
+
+#storeEvent{
+    width: 372px;
+}
+
+#notic{
+    width: 372px;
+}
+

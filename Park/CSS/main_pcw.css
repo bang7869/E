@@ -233,7 +233,7 @@ td#color01, td#color02{
     #team{display: none;}
   }
 
-@media all and (max-width: 360px){
+@media all and (max-width: 575px){
     #mainHeader, nav{
         flex-direction: column;
         justify-content: start;

@@ -1,0 +1,318 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  header.main_header{
+    height: 76px;
+    border-bottom: 3px solid black;
+    background-color: #f5f1e7;
+  }
+  
+  #mainHeader{
+    background-color: #f5f1e7;
+    display: flex;
+    border-bottom: 3px solid black;
+    justify-content: center;
+    height: 76px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  
+  ul#menu_category{
+    display: flex;
+    padding-top: 40px;
+    list-style: none;
+  }
+  
+  #menu_category li a span{
+    font-size: 14px;
+    color: #69461c;
+  }
+  
+  ul#menu_category li a{
+    color: #69461c;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-bottom: 20;
+  }
+  #menu_category li:hover a, #menu_category li:hover span{
+    color: #a97b48;
+  }
+  #navbar_brand{font-size: 0em;}
+  
+
+/* =======================HEADER============================== */
+
+div#main_img_first{
+    background:url('http://www.naturekitchen.co.kr/images/main/main_visual01.jpg') center no-repeat;
+    width: 100%;
+    height: 712px;
+    padding-top: 152px;
+    box-sizing: content-box;
+}
+
+div#main_first_price{
+    width: 100%;
+    background: rgba(29, 23, 11, .8);
+    height: 116px;
+    margin-top: -192px;
+}
+
+div#main_first_price p#price{
+    text-align: center;
+    height: 116px;
+}
+
+/* ==========================Firest Content Finish================================ */
+
+div#main_img_second{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main02.jpg') center no-repeat;
+    width: 100%;
+}
+
+div#main_second_content{
+    width: 1021px;
+    margin: 0 auto;
+    display: table;
+}
+
+#main_second_content img{
+    float: left;
+}
+
+div#main_second_content ul#menu_list{
+    float: left;
+    display: flex;
+    padding: 40px 3px 0px 0px;
+    margin-left: 18px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+#main_second_content ul#menu_list li{
+    border: 0px none;
+    margin-right: 9px;
+}
+
+#tables{
+    float: left;
+    padding-top: 20px;
+    margin-left: 18px;
+    display: flex;
+}
+
+#storeEvent{
+    border: 1px solid black;
+    width: 367px;
+    height: 157px;
+}
+
+#notic{
+    border: 1px solid black;
+    width: 372px;
+    margin-left: 9px;
+    height: 157px;
+}
+
+#storeEvent td, #notic td{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#title_back{
+    background-color: burlywood;
+    text-align: center;
+}
+
+#text_back{
+    text-align: center;
+}
+
+.table{
+    margin: 0px;
+}
+
+.pagination{
+    margin: 0px;
+}
+
+#salad{
+    float: left;
+    padding-top: 20px;
+    margin-left: 18px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#adt{
+    border-collapse: collapse;
+    margin-bottom: 13px;
+}
+
+td#color01{
+    background-color: #eee9e0;
+}
+
+td#color02{
+    background-color: #f8f3eb;
+}
+
+td#color01, td#color02{
+    padding: 20px;
+    vertical-align: middle;
+}
+
+#main_img_mobile_second{
+    display: none;
+}
+
+/* =================Second Content Finish========================= */
+
+#main_img_third{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main01.jpg') center no-repeat;
+    height: 949px;
+}
+
+#main_third_content{
+    border: 0px none;
+    width: 1021px;
+    margin: 0 auto;
+}
+
+
+/* ======================Third Content Finish===================== */
+
+#main_img_last{
+    background: url('http://www.naturekitchen.co.kr/images/main/bg_main01.jpg') center no-repeat;
+    height: 710px;
+}
+
+#main_last_content{
+    width: 1021px;
+    margin: 0 auto;
+}
+
+#main_last_content img{
+    border: 0px none;
+}
+
+/* ====================Last Content Finish============================== */
+
+.footersty{
+    background-color: #939598;
+    height: 188px;
+    display: flex;
+    justify-content: center;
+  }
+  #footeraside{
+    float: right;
+    margin-top: 40px;
+  }
+  #footersection{
+      float: left;
+      word-wrap: normal;
+      margin-top: 40px;
+      color: white;
+      font-size: .8em;
+  }
+  a.aa4{
+      color: #e6c64f;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+/* =====================Footer Content Finish============================== */
+
+@media all and (max-width: 800px){
+    #mainHeader, nav{
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 10px;
+    }
+    #banner{
+      padding-top: 0px;
+    }
+  
+    .footersty > div{
+      max-width: 800px;
+      padding-left: 20px;
+    }
+
+    #footeraside{
+     font-size: 0;
+     margin: 0 auto;
+     float: left;
+     padding-top: 5px;
+    }
+
+    #footersection{
+      margin: 0 auto;
+      padding-top: 5px;
+    }
+    .a_span{display: block; text-align: center;}
+  
+    
+    #navbar_brand{font-size: 1.5rem; color: #ab875d;}
+    header > nav > div{background-color: black; width: 800px; position: absolute;}
+    header > nav > div > div > ul{ float: right;}
+    header > nav > div > div > ul > li {padding: 0 33px;}
+    ul#menu_category li a{
+      margin: 0;
+      margin-top: 0;
+    }
+  
+    .navbar{
+      padding: 0;
+    }
+
+    div#main_img_first{
+        border: 1px solid black;
+        background:url('../Image/20191216_popup01(6).jpg') center no-repeat;
+        width: 100%;
+        height: 500px;
+        margin-bottom: -76px;
+    background-color: #871515;
+    }
+
+    #main_first_price{
+        display: none;
+    }
+
+    #main_img_third{
+        display: none;
+    }
+   
+    #main_img_last{
+        display: none;
+    }
+
+    #main_second_content img#category_second_img{
+        display: none;
+    }
+
+    #storeEvent, #notic{
+        display: block;
+    }
+
+    #main_img_second{
+        display: none;
+    }
+
+    #main_img_mobile_second{
+        display: inline-block;
+        width: 100%;
+        height: 587px; 
+    }
+
+    article{
+        margin-bottom: -5px;
+    }
+
+  }
+
+  /* ================Mobile Finish========================== */

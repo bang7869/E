@@ -1,0 +1,9 @@
+@media all and(max-width:320px){
+   #img1{
+       max-width: 100%;
+       height: auto;
+   }
+   #td1,#td2,#td3{
+       font-size: 10px;
+   }
+}

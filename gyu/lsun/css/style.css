@@ -1,0 +1,229 @@
+
+body{
+  background-image: url("../img/batang.png");
+}
+
+header.main_header{
+  height: 76px;
+  border-bottom: 3px solid black;
+  background-color: #f5f1e7;
+}
+
+a.gongji{
+background-color: #2e1705; 
+color: #f5f1e7; 
+font-size: 1.3em; 
+font-family: "휴먼명조", sans-serif;
+text-decoration: none;
+}
+a.gongji:hover{
+  background-color: #2e1705;    
+}
+
+
+
+a.event{
+  background-color: #a97b48; 
+  color: #f5f1e7; 
+  font-size: 1.3em ;
+  text-decoration: none;
+  font-family: "휴먼명조", sans-serif;
+}
+a.event:hover{
+  background-color: #2e1705; 
+    
+}
+a.aa3{
+    color: black;
+    text-decoration: none;
+
+}
+th{
+    border-bottom-color: #c2a683;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background-color: #e5d4bb;
+    color: #694614;
+    font-size: 1.1em;
+}
+td{
+  border-bottom-color: #d9c8b0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+}
+table{
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #ab875d;
+    
+}
+.footersty{
+  background-color: #939598;
+  height: 188px;
+  display: flex;
+  justify-content: center;
+}
+#footeraside{
+  float: right;
+  margin-top: 40px;
+}
+#footersection{
+    float: left;
+    word-wrap: normal;
+    margin-top: 40px;
+    color: white;
+    font-size: .8em;
+}
+a.aa4{
+    color: #e6c64f;
+    text-decoration: none;
+    font-weight: bold;
+}
+.myinput{
+  width: 300px;
+  height: 25px;
+  display: flex;
+  float: right;
+}
+#sel{
+  width: 80px;
+  display: flex;
+  float: right;
+  margin-right: 3px;
+  
+}
+#btn_search{
+  display: flex;
+  float: right;
+  background-color: #ab875d;
+  width: 50px;
+  height: 25px;
+  border-color: #ab875d;
+  box-shadow: none;
+  margin-right: 46px;
+  
+}
+#btn_search_img{
+  margin-left: 8px;
+}
+#ifram_header{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#mainHeader{
+  background-color: #f5f1e7;
+  display: flex;
+  border-bottom: 3px solid black;
+  justify-content: center;
+  height: 76px;
+  position: fixed;
+  width: 100%;
+}
+
+ul#menu_category{
+  display: flex;
+  padding-top: 40px;
+  list-style: none;
+}
+
+#menu_category li a span{
+  font-size: 14px;
+  color: #69461c;
+}
+
+ul#menu_category li a{
+  color: #69461c;
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-bottom: 20;
+}
+#menu_category li:hover a, #menu_category li:hover span{
+  color: #a97b48;
+}
+#navbar_brand{font-size: 0em;}
+.pageBtn{
+  color: black;
+  margin-top: 5px;
+  padding:0 5px;
+background-image: url("../img/batang.png");
+border: 0;
+}
+.td1{
+  text-align: center;
+  width: 15%;
+}
+.td2{
+  text-align: center;
+  width: 10%;
+}
+
+@media all and (min-width: 576px){
+  .table{
+    width: 1021px;
+    margin: 0 auto;
+  }
+}
+
+
+@media all and (max-width: 575px){
+  #mainHeader, nav{
+      flex-direction: column;
+      justify-content: start;
+      padding-top: 10px;
+  }
+  
+  #banner{
+    padding-top: 0px;
+  }
+
+  .footersty > div{
+    max-width: 600px;
+    padding-left: 20px;
+
+  }
+  #footeraside{
+   font-size: 0;
+   margin: 0 auto;
+   float: left;
+   padding-top: 5px;
+  }
+ 
+  #footersection{
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+  .a_span{display: block; text-align: center;}
+
+  
+  #navbar_brand{font-size: 1.5rem; color: #ab875d;}
+  header > nav > div{background-color: black; width: 600px; position: absolute;}
+  header > nav > div > div > ul{ float: right;}
+  header > nav > div > div > ul > li {padding: 0 33px;}
+  ul#menu_category li a{
+    margin: 0;
+    margin-top: 0;
+  }
+
+  .navbar{
+    padding: 0;
+  }
+  .myinput{
+    width: 250px;
+  }
+
+  
+ 
+}
+

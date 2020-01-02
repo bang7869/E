@@ -1,43 +1,62 @@
-@media all and (max-width: 575px){
+@media all and (min-width:451px){
+  #team{display: none;}
+}
+
+@media all and (max-width: 450px){
   #mainHeader, nav{
       flex-direction: column;
       justify-content: start;
       padding-top: 10px;
   }
+  
   #banner{
     padding-top: 0px;
   }
 
   .footersty > div{
-    max-width: 600px;
+    text-align: center;
     padding-left: 20px;
 
   }
   #footeraside{
    font-size: 0;
-   margin: 0 auto;
+   margin: 0;
+   padding: 20px;
    float: left;
-   padding-top: 5px;
+  }
+  
+  #footeraside_img{
+    display: block;
+  margin: 0 auto;
+
   }
  
   #footersection{
-    margin: 0 auto;
-    padding-top: 5px;
+    display: none;
   }
-  .a_span{display: block; text-align: center;}
+  .a_span{display: none;}
+
+  /* #header_a{display: flex; align-content: flex-start; flex-direction: column; flex-wrap: wrap; overflow: auto;} */
 
   
   #navbar_brand{font-size: 1.5rem; color: #ab875d;}
   header > nav > div{background-color: black; width: 600px; position: absolute;}
   header > nav > div > div > ul{ float: right;}
   header > nav > div > div > ul > li {padding: 0 33px;}
+  ul#menu_category{padding-top: 0; text-align: center; width: 100%;}
+  ul#menu_category li{padding: 0; margin: 0;}
   ul#menu_category li a{
     margin: 0;
     margin-top: 0;
+    border-bottom:1px solid #ab875d;
+    width: 100%;
+    color: #a97b48;
   }
 
   .navbar{
     padding: 0;
   }
- 
+  #navMenu{background-color: black ;}
+  #navbar_brand{padding: 0; margin: 0;}
+  #team{display: block; color: white; padding: 0; margin:5px 0 auto; }
 }

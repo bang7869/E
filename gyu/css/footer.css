@@ -1,23 +1,23 @@
 
 .footersty{
-    background-color: #939598;
-    height: 188px;
-    display: flex;
-    justify-content: center;
-  }
-  #footeraside{
-    float: right;
+  background-color: #939598;
+  height: 188px;
+  display: flex;
+  justify-content: center;
+}
+#footeraside{
+  float: right;
+  margin-top: 40px;
+}
+#footersection{
+    float: left;
+    word-wrap: normal;
     margin-top: 40px;
-  }
-  #footersection{
-      float: left;
-      word-wrap: normal;
-      margin-top: 40px;
-      color: white;
-      font-size: .8em;
-  }
-  a.aa4{
-      color: #e6c64f;
-      text-decoration: none;
-      font-weight: bold;
-  }
+    color: white;
+    font-size: .8em;
+}
+a.aa4{
+    color: #e6c64f;
+    text-decoration: none;
+    font-weight: bold;
+}

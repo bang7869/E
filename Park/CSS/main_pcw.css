@@ -134,7 +134,8 @@ div#main_second_content ul#menu_list{
 }
 
 .table{
-    margin: 0px;
+    width: 100%;
+    margin-bottom: .7rem;
 }
 
 .pagination{

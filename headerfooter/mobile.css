@@ -1,8 +1,8 @@
-@media all and (min-width:361px){
+@media all and (min-width:401px){
   #team{display: none;}
 }
 
-@media all and (max-width: 360px){
+@media all and (max-width: 450px){
   #mainHeader, nav{
       flex-direction: column;
       justify-content: start;
@@ -14,15 +14,21 @@
   }
 
   .footersty > div{
-    
+    text-align: center;
     padding-left: 20px;
 
   }
   #footeraside{
    font-size: 0;
-   margin: 0 auto;
+   margin: 0;
    padding: 20px;
-   
+   float: left;
+  }
+  
+  #footeraside_img{
+    display: block;
+  margin: 0 auto;
+
   }
  
   #footersection{
@@ -52,5 +58,5 @@
   }
   #navMenu{background-color: black ;}
   #navbar_brand{padding: 0; margin: 0;}
-  #team{display: block; color: white; padding: 0; margin:5px 0 0;}
+  #team{display: block; color: white; padding: 0; margin:5px 0 auto; }
 }

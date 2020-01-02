@@ -372,3 +372,11 @@ footer img{
     background-color: #a97b48;
     border-radius: 5px;
 }
+
+
+.readyBox{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}

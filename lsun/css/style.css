@@ -1,6 +1,7 @@
 
 body{
   background-image: url("../img/batang.png");
+  line-height: 1.0em;
 }
 
 header.main_header{
@@ -15,6 +16,7 @@ color: #f5f1e7;
 font-size: 1.3em; 
 font-family: "휴먼명조", sans-serif;
 text-decoration: none;
+line-height: 1.5em;
 }
 a.gongji:hover{
   background-color: #2e1705;    
@@ -27,6 +29,7 @@ a.event{
   color: #f5f1e7; 
   font-size: 1.3em ;
   text-decoration: none;
+  line-height: 1.5em;
   font-family: "휴먼명조", sans-serif;
 }
 a.event:hover{
@@ -169,13 +172,15 @@ border: 0;
   width: 10%;
 }
 
-@media all and (min-width: 576px){
+
+@media all and (min-width: 780px){
   .table{
     width: 1021px;
     margin: 0 auto;
   }
 }
-@media all and (min-width:451px){
+
+@media all and (min-width:401px){
   #team{display: none;}
 }
 
@@ -198,8 +203,8 @@ border: 0;
   #footeraside{
    font-size: 0;
    margin: 0;
-
-
+   padding: 20px;
+   float: left;
   }
   
   #footeraside_img{
@@ -236,4 +241,6 @@ border: 0;
   #navMenu{background-color: black ;}
   #navbar_brand{padding: 0; margin: 0;}
   #team{display: block; color: white; padding: 0; margin:5px 0 auto; }
+  .myinput{width: 170px;}
+  #btn_search{margin: 0;}
 }

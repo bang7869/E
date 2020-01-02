@@ -238,17 +238,4 @@ border: 0;
   .navbar{
     padding: 0;
   }
-<<<<<<< HEAD
-  .myinput{
-    width: 250px;
-  }
-=======
-  #navMenu{background-color: black ;}
-  #navbar_brand{padding: 0; margin: 0;}
-  #team{display: block; color: white; padding: 0; margin:5px 0 auto; }
->>>>>>> hotfix1
-
-  .myinput{width: 170px;}
-  #btn_search{margin: 0;}
 }
-

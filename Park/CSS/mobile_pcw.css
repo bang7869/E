@@ -4,16 +4,25 @@ body{
     padding-top: 10px;
 }
 
+body.container{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 #list01, #list02{
     display: block;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 #storeEvent{
-    width: 372px;
+    width: 360px;
 }
 
 #notic{
-    width: 372px;
+    width: 360px;
 }
 

@@ -228,7 +228,11 @@ td#color01, td#color02{
 
 /* =====================Footer Content Finish============================== */
 
-@media all and (max-width: 800px){
+@media all and (min-width:361px){
+    #team{display: none;}
+  }
+
+@media all and (max-width: 360px){
     #mainHeader, nav{
         flex-direction: column;
         justify-content: start;
@@ -239,22 +243,19 @@ td#color01, td#color02{
     }
   
     .footersty > div{
-      max-width: 800px;
       padding-left: 20px;
     }
 
     #footeraside{
      font-size: 0;
      margin: 0 auto;
-     float: left;
-     padding-top: 5px;
+     padding: 20px;
     }
 
     #footersection{
-      margin: 0 auto;
-      padding-top: 5px;
+      display: none;
     }
-    .a_span{display: block; text-align: center;}
+    .a_span{display: block;}
   
     
     #navbar_brand{font-size: 1.5rem; color: #ab875d;}

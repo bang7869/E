@@ -41,7 +41,7 @@ a.aa3{
     text-decoration: none;
 
 }
-th{
+.lsunth{
     border-bottom-color: #c2a683;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -55,7 +55,7 @@ td{
   border-bottom-style: solid;
 
 }
-table{
+.lsuntable{
     border-top-width: 3px;
     border-top-style: solid;
     border-top-color: #ab875d;
@@ -174,7 +174,7 @@ border: 0;
 
 
 @media all and (min-width: 780px){
-  .table{
+  .lsuntable{
     width: 1021px;
     margin: 0 auto;
   }
